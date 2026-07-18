@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<!-- remotes -->
+    
+    <remote
+        name="rexix-codeberg"
+        fetch="https://codeberg.org/rexix01/" />
+
+    <remote
+        name="MinitxT"
+        fetch="https://github.com/MinitxT/" />
+
+    <remote
+        name="moto-manaus"
+        fetch="https://github.com/moto-manaus/" />
+
+
+<!-- Device tree -->
+    
+    <project
+        name="device_motorola_manaus"
+        path="device/motorola/manaus"
+        remote="MinitxT" />
+    
+<!-- prebuilt kernel tree -->
+    
+    <project
+        name="device_motorola_manaus-kernel"
+        path="device/motorola/manaus-kernel"
+        remote="moto-manaus" />
+
+    <!-- OSS kernel tree -->
+    
+    <project
+        name="kernel_motorola_manaus"
+        path="kernel/motorola/manaus"
+        remote="moto-manaus" />
+
+<!-- vendor tree -->
+    
+    <project
+        name="vendor_motorola_manaus"
+        path="vendor/motorola/manaus"
+        remote="rexix-codeberg" />
+
+<!-- mtk SEpolicy tree -->
+    
+    <project
+        name="device_mediatek_sepolicy_vndr"
+        path="device/mediatek/sepolicy_vndr"
+        remote="moto-manaus" />
+
+<!-- mtk hardware tree -->
+    
+    <project
+        name="hardware_mediatek"
+        path="hardware/mediatek"
+        remote="moto-manaus" />
+
+<!-- moto hardware tree -->
+    
+    <project
+        name="hardware_motorola"
+        path="hardware/motorola"
+        remote="moto-manaus" />
+    
+    
+
+</manifest>
