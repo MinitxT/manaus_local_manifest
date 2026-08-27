@@ -1,70 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<!-- remotes -->
-    
+    <!-- Remotes -->
     <remote
-        name="rexix-codeberg"
-        fetch="https://codeberg.org/rexix01/" />
-
-    <remote
-        name="MinitxT"
-        fetch="https://github.com/MinitxT/" />
+        name="github"
+        fetch="https://github.com/" />
 
     <remote
-        name="moto-manaus"
-        fetch="https://github.com/moto-manaus/" />
+        name="codeberg"
+        fetch="https://codeberg.org/" />
 
-
-<!-- Device tree -->
-    
+    <!-- Device Tree -->
     <project
-        name="device_motorola_manaus"
+        name="LineageOS/android_device_motorola_manaus"
         path="device/motorola/manaus"
-        remote="MinitxT" />
-    
-<!-- prebuilt kernel tree -->
-    
-    <project
-        name="device_motorola_manaus-kernel"
-        path="device/motorola/manaus-kernel"
-        remote="moto-manaus" />
+        remote="github" />
 
-    <!-- OSS kernel tree -->
-    
+    <!-- Common Device Tree -->
     <project
-        name="kernel_motorola_manaus"
-        path="kernel/motorola/manaus"
-        remote="moto-manaus" />
+        name="moto-mt6879/android_device_motorola_mt6879-common"
+        path="device/motorola/mt6879-common"
+        remote="github" />
 
-<!-- vendor tree -->
-    
+    <!-- Vendor -->
     <project
-        name="vendor_motorola_manaus"
+        name="rexix01/vendor_motorola_manaus"
         path="vendor/motorola/manaus"
-        remote="rexix-codeberg" />
+        remote="codeberg" />
 
-<!-- mtk SEpolicy tree -->
-    
+    <!-- Kernel -->
     <project
-        name="device_mediatek_sepolicy_vndr"
-        path="device/mediatek/sepolicy_vndr"
-        remote="moto-manaus" />
+        name="moto-mt6879/android_kernel_motorola_mt6879"
+        path="kernel/motorola/mt6879"
+        remote="github" />
 
-<!-- mtk hardware tree -->
-    
+    <!-- MediaTek Hardware -->
     <project
-        name="hardware_mediatek"
+        name="moto-mt6879/hardware_mediatek"
         path="hardware/mediatek"
-        remote="moto-manaus" />
+        remote="github" />
 
-<!-- moto hardware tree -->
-    
+    <!-- Motorola Hardware -->
     <project
-        name="hardware_motorola"
+        name="moto-mt6879/hardware_motorola"
         path="hardware/motorola"
-        remote="moto-manaus" />
-    
-    
+        remote="github" />
+
+    <!-- MediaTek SEPolicy -->
+    <project
+        name="moto-mt6879/device_mediatek_sepolicy_vndr"
+        path="device/mediatek/sepolicy_vndr"
+        remote="github" />
 
 </manifest>
