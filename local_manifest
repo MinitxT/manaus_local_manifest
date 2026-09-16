@@ -6,27 +6,33 @@
         name="github"
         fetch="https://github.com/" />
 
-    <remote
-        name="codeberg"
-        fetch="https://codeberg.org/" />
-
     <!-- Device Tree -->
     <project
-        name="LineageOS/android_device_motorola_manaus"
+        name="MinitxT/device_motorola_manaus"
         path="device/motorola/manaus"
-        remote="github" />
+        remote="github"
+        revision="ALL-A16" />
 
     <!-- Common Device Tree -->
     <project
         name="moto-mt6879/android_device_motorola_mt6879-common"
         path="device/motorola/mt6879-common"
-        remote="github" />
+        remote="github"
+        revision="lineage-23.2" />
 
     <!-- Vendor -->
     <project
-        name="rexix01/vendor_motorola_manaus"
+        name="moto-mt6879/proprietary_vendor_motorola_manaus"
         path="vendor/motorola/manaus"
-        remote="codeberg" />
+        remote="github"
+        revision="lineage-23.2" />
+
+    <!-- Vendor Common -->
+    <project
+        name="moto-mt6879/proprietary_vendor_motorola_mt6879-common"
+        path="vendor/motorola/mt6879-common"
+        remote="github"
+        revision="lineage-23.2" />
 
     <!-- Kernel -->
     <project
