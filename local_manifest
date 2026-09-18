@@ -11,7 +11,7 @@
         name="MinitxT/device_motorola_manaus"
         path="device/motorola/manaus"
         remote="github"
-        revision="ALL-A16" />
+        revision="Aixom" />
 
     <!-- Common Device Tree -->
     <project
