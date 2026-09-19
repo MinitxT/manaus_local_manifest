@@ -8,10 +8,10 @@
 
     <!-- Device Tree -->
     <project
-        name="MinitxT/device_motorola_manaus"
+        name="LineageOS/android_device_motorola_manaus"
         path="device/motorola/manaus"
         remote="github"
-        revision="Axiom" />
+        revision="lineage-23.2" />
 
     <!-- Common Device Tree -->
     <project
