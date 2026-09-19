@@ -8,7 +8,7 @@
 
     <!-- Device Tree -->
     <project
-        name="LineageOS/android_device_motorola_manaus"
+        name="MinitxT/android_device_motorola_manaus"
         path="device/motorola/manaus"
         remote="github"
         revision="lineage-23.2" />
