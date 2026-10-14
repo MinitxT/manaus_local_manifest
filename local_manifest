@@ -1,3 +1,4 @@
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
@@ -6,60 +7,75 @@
         name="github"
         fetch="https://github.com/" />
 
+    <!-- Frameworks AV: POS Torch Fix -->
+    <project
+        name="MinitxT/android_frameworks_av"
+        path="frameworks/av"
+        remote="github"
+        revision="a16-pos-torch-fix" />
+
     <!-- Device Tree -->
     <project
-        name="MinitxT/android_device_motorola_manaus"
+        name="MinitxT/linage-23.2_device_motorola_manaus"
         path="device/motorola/manaus"
         remote="github"
-        revision="lineage-23.2" />
+        revision="pos" />
 
     <!-- Common Device Tree -->
     <project
-        name="moto-mt6879/android_device_motorola_mt6879-common"
+        name="MinitxT/linage-23.2_device_motorola_mt6879-common"
         path="device/motorola/mt6879-common"
         remote="github"
-        revision="lineage-23.2" />
+        revision="test-" />
 
     <!-- Vendor -->
     <project
-        name="moto-mt6879/proprietary_vendor_motorola_manaus"
+        name="MinitxT/proprietary_vendor_motorola_manaus"
         path="vendor/motorola/manaus"
         remote="github"
-        revision="lineage-23.2" />
+        revision="master" />
 
     <!-- Vendor Common -->
     <project
-        name="moto-mt6879/proprietary_vendor_motorola_mt6879-common"
+        name="MinitxT/proprietary_vendor_motorola_mt6879-common"
         path="vendor/motorola/mt6879-common"
         remote="github"
-        revision="lineage-23.2" />
+        revision="dolbt-test" />
 
     <!-- Kernel -->
     <project
-        name="moto-mt6879/android_kernel_motorola_mt6879"
+        name="MinitxT/lineage-23.2_kernel_motorola_mt6879"
         path="kernel/motorola/mt6879"
         remote="github"
-        revision="lineage-23.2" />
+        revision="torch-2" />
 
     <!-- MediaTek Hardware -->
     <project
-        name="moto-mt6879/hardware_mediatek"
+        name="LineageOS/android_hardware_mediatek"
         path="hardware/mediatek"
         remote="github"
         revision="lineage-23.2" />
 
     <!-- Motorola Hardware -->
     <project
-        name="moto-mt6879/hardware_motorola"
+        name="LineageOS/android_hardware_motorola"
         path="hardware/motorola"
         remote="github"
         revision="lineage-23.2" />
 
     <!-- MediaTek SEPolicy -->
     <project
-        name="moto-mt6879/device_mediatek_sepolicy_vndr"
+        name="LineageOS/android_device_mediatek_sepolicy_vndr"
         path="device/mediatek/sepolicy_vndr"
         remote="github"
         revision="lineage-23.2" />
 
+    <!-- Lunaris Dolby -->
+    <project
+        name="crdroidandroid/android_packages_apps_LunarisDolby"
+        path="packages/apps/LunarisDolby"
+        remote="github"
+        revision="16.0" />
+
 </manifest>
+```
